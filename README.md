@@ -27,3 +27,18 @@ Puedes instalar las dependencias con:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Argumentos:
+--t       Duración de la grabación en segundos (opcional, por defecto es indefinida)(--t [tiempo en segundos])
+```bash
+python record.py --t 
+```
+--d       Índice del dispositivo de entrada
+```bash
+python record.py --d
+```
+--ld        Listar dispositivos de audio disponibles
+```bash
+python record.py --ld
+```
