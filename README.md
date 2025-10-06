@@ -1,2 +1,30 @@
-# record_audio_background
-Aplicación creada en Python para capturar audio en segundo plano.
+# Grabador de Audio con PyAudio
+
+Un script en Python para grabar audio desde el micrófono usando PyAudio, con soporte para grabación indefinida o por tiempo definido, selección de dispositivo de entrada, y visualización del tiempo transcurrido en la consola.
+
+---
+
+## 📋 Características
+
+- Graba audio en formato WAV (mono, 48 kHz, 16 bits).
+- Grabación indefinida (hasta que el usuario detenga con `Ctrl+C`).
+- Opción para grabar por un tiempo específico.
+- Muestra el tiempo transcurrido y el tiempo total o estimado en la consola.
+- Permite seleccionar el dispositivo de entrada de audio.
+- Lista los dispositivos de audio disponibles.
+- Guarda los archivos de audio en la carpeta `records`.
+
+---
+
+## 📦 Requisitos
+
+- Python 3.6 o superior.
+- Librerías requeridas:
+  - `pyaudio`
+  - `numpy` (opcional, solo si se usa visualización en tiempo real)
+  - `matplotlib` (opcional, solo si se usa visualización en tiempo real)
+
+Puedes instalar las dependencias con:
+
+```bash
+pip install pyaudio
