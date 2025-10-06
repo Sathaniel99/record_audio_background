@@ -6,7 +6,7 @@ Un script en Python para grabar audio desde el micrófono usando PyAudio, con so
 
 ## 📋 Características
 
-- Graba audio en formato WAV (mono, 48 kHz, 16 bits).
+- Graba audio en formato WAV (mono, 48 kHz, 16-32 bits).
 - Grabación indefinida (hasta que el usuario detenga con `Ctrl+C`).
 - Opción para grabar por un tiempo específico.
 - Muestra el tiempo transcurrido y el tiempo total o estimado en la consola.
@@ -22,9 +22,8 @@ Un script en Python para grabar audio desde el micrófono usando PyAudio, con so
 - Librerías requeridas:
   - `pyaudio`
   - `numpy` (opcional, solo si se usa visualización en tiempo real)
-  - `matplotlib` (opcional, solo si se usa visualización en tiempo real)
 
 Puedes instalar las dependencias con:
 
 ```bash
-pip install pyaudio
+pip install -r requirements.txt
